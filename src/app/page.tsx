@@ -19,7 +19,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1920&q=80')",
+            backgroundImage: "url('/photos/CV7EA4TX3VJYWYQ5L6RALE3K.webp')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/70 via-brand-dark/50 to-brand-dark" />

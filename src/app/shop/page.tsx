@@ -4,7 +4,7 @@ import { products, categoryLabels, type Product } from "@/data/products";
 function ProductCard({ product }: { product: Product }) {
   return (
     <div className="group overflow-hidden rounded-lg border border-white/10 bg-brand-card transition-colors hover:bg-brand-card-hover">
-      <div className="aspect-video bg-gray-800" />
+      <img src={product.image} alt={product.name} className="aspect-video w-full object-cover" />
       <div className="p-6">
         <h3 className="font-heading text-lg font-bold text-white">
           {product.name}

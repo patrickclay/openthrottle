@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1920&q=80')",
+            backgroundImage: "url('/photos/PEI2VNB6LYH3GRM7HY6MHCYX.webp')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/80 to-brand-dark" />
@@ -46,18 +46,20 @@ export default function AboutPage() {
                 name: "2003 BMW 325i",
                 number: "#62",
                 desc: "Our ChampCar and AER workhorse. Lightweight, reliable, and surprisingly fast for a 95-horsepower machine. Full roll cage, race suspension, and Bridgestone RE-71RS tires.",
+                image: "/photos/X5CSKLNWIMFWZCJ35MBJSUJF.webp",
               },
               {
                 name: "2001 BMW 330Ci",
                 number: "",
                 desc: "More power for WRL competition. The 330Ci brings extra grunt for the faster GP classes while maintaining the BMW reliability we depend on for endurance racing.",
+                image: "/photos/DV6HQVQIU5FTEJBPWCINDSZH.webp",
               },
             ].map((car) => (
               <div
                 key={car.name}
                 className="overflow-hidden rounded-lg border border-white/10 bg-brand-dark"
               >
-                <div className="aspect-video bg-gray-800" />
+                <img src={car.image} alt={car.name} className="aspect-video w-full object-cover" />
                 <div className="p-6">
                   <h3 className="font-heading text-2xl font-bold text-white">
                     {car.name}{" "}

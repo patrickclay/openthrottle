@@ -15,7 +15,7 @@ export const products: Product[] = [
     category: "champcar",
     price: 2500,
     description: "14-hour endurance race seat at Barber Motorsports Park. March 13-15, 2026.",
-    image: "/images/placeholder-race-1.jpg",
+    image: "/photos/25G4BC5O6MIXUTBJK4W7KOA6.webp",
     details: [
       "Race-prepared BMW or Porsche",
       "Minimum 2-hour stint",
@@ -30,7 +30,7 @@ export const products: Product[] = [
     category: "champcar",
     price: 3500,
     description: "24-hour endurance race seat at Daytona International Speedway. May 1-3, 2026.",
-    image: "/images/placeholder-race-2.jpg",
+    image: "/photos/JI7O2FFBZWI2SXNMUEATEO2I.webp",
     details: [
       "Race-prepared BMW or Porsche",
       "Minimum 2-hour stint",
@@ -45,7 +45,7 @@ export const products: Product[] = [
     category: "wrl-gp1",
     price: 2800,
     description: "GP1 class race seat at Road Atlanta. April 3-5, 2026.",
-    image: "/images/placeholder-race-3.jpg",
+    image: "/photos/IM3GGJAHCWAZ333L5HF4FETF.webp",
     details: [
       "GP1-class race car",
       "8-hour endurance format",
@@ -60,7 +60,7 @@ export const products: Product[] = [
     category: "wrl-gp3",
     price: 2200,
     description: "GP3 class race seat at Sebring International Raceway. July 10-12, 2026.",
-    image: "/images/placeholder-race-4.jpg",
+    image: "/photos/GATJDSVKCUMZT2TU6TZZUXIS.webp",
     details: [
       "GP3-class race car",
       "8-hour endurance format",
@@ -75,7 +75,7 @@ export const products: Product[] = [
     category: "trackday",
     price: 1500,
     description: "Full-day track rental in a race-prepared BMW. Available at select events.",
-    image: "/images/placeholder-trackday.jpg",
+    image: "/photos/H6YEXMCIXM5VLFL6NI42YBZQ.webp",
     details: [
       "Race-prepared BMW",
       "Full day of track time",
@@ -89,7 +89,7 @@ export const products: Product[] = [
     category: "merch",
     price: 35,
     description: "Official Open Throttle Racing team shirt.",
-    image: "/images/placeholder-merch.jpg",
+    image: "/photos/high%20plains%202023_1771708236.webp",
     details: ["100% cotton", "Unisex sizing", "Lime green logo"],
   },
 ];

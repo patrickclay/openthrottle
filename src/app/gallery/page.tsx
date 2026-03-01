@@ -1,15 +1,20 @@
 import SectionHeading from "@/components/SectionHeading";
 
-const placeholderImages = [
-  { id: 1, alt: "Race car on track", aspect: "aspect-video" },
-  { id: 2, alt: "Pit stop action", aspect: "aspect-square" },
-  { id: 3, alt: "Driver in cockpit", aspect: "aspect-square" },
-  { id: 4, alt: "Team photo", aspect: "aspect-video" },
-  { id: 5, alt: "Night racing", aspect: "aspect-video" },
-  { id: 6, alt: "Podium celebration", aspect: "aspect-square" },
-  { id: 7, alt: "Car detail shot", aspect: "aspect-square" },
-  { id: 8, alt: "Track aerial view", aspect: "aspect-video" },
-  { id: 9, alt: "Pre-race grid", aspect: "aspect-video" },
+const galleryImages = [
+  { src: "/photos/CV7EA4TX3VJYWYQ5L6RALE3K.webp", alt: "Green BMW leading the pack at dusk" },
+  { src: "/photos/63J4WQYZTJIWHTM3QTRVF6X5.webp", alt: "Pit stop — crew working the green BMW" },
+  { src: "/photos/25G4BC5O6MIXUTBJK4W7KOA6.webp", alt: "Stars and stripes BMW on track at COTA" },
+  { src: "/photos/GATJDSVKCUMZT2TU6TZZUXIS.webp", alt: "Green BMW M3 rear view on track" },
+  { src: "/photos/DV6HQVQIU5FTEJBPWCINDSZH.webp", alt: "Green BMW M3 WRL GTO in the paddock" },
+  { src: "/photos/high%20plains%202023_1771708236.webp", alt: "Team celebration at High Plains Raceway" },
+  { src: "/photos/IM3GGJAHCWAZ333L5HF4FETF.webp", alt: "Green BMW leading at Road Atlanta" },
+  { src: "/photos/JI7O2FFBZWI2SXNMUEATEO2I.webp", alt: "Green BMW speed blur at Sebring" },
+  { src: "/photos/O4IMLLLX6O3XN3YOQXK67D36.webp", alt: "Pack racing at COTA from above" },
+  { src: "/photos/PEI2VNB6LYH3GRM7HY6MHCYX.webp", alt: "Green BMW at speed — motion blur" },
+  { src: "/photos/T7KZJVVTZ6RBMVB3DHYL4ZIE.webp", alt: "Two green BMWs chasing through turns" },
+  { src: "/photos/WYPQUZ5LDNI6MHFTDB333MBJ.webp", alt: "Stars and stripes BMW head-on in pit lane" },
+  { src: "/photos/X5CSKLNWIMFWZCJ35MBJSUJF.webp", alt: "Stars and stripes BMW side profile at speed" },
+  { src: "/photos/H6YEXMCIXM5VLFL6NI42YBZQ.webp", alt: "Green BMW #59 at Sebring paddock" },
 ];
 
 export default function GalleryPage() {
@@ -18,28 +23,26 @@ export default function GalleryPage() {
       <section className="pb-6 pt-12 text-center">
         <SectionHeading
           title="Gallery"
-          subtitle="Action from the track — placeholder images shown below"
+          subtitle="Action from the track"
         />
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
-          {placeholderImages.map((img) => (
+          {galleryImages.map((img) => (
             <div
-              key={img.id}
+              key={img.src}
               className="mb-4 break-inside-avoid overflow-hidden rounded-lg border border-white/10"
             >
-              <div
-                className={`${img.aspect} w-full bg-gray-800 flex items-center justify-center`}
-              >
-                <span className="text-sm text-gray-600">{img.alt}</span>
-              </div>
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full object-cover"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
-        <p className="mt-12 text-center text-sm text-gray-500">
-          Client photos and videos will replace these placeholders.
-        </p>
       </section>
     </>
   );
